@@ -62,7 +62,7 @@ export const Plan: FC<Props> = ({
   } = usePlan({ planId: plan.id, period: period });
 
   return (
-    <StyledPlan className={clsx({ active: isActive })}>
+    <StyledPlan className={clsx({ active: isActive })} data-cy="billing-plan">
       <PlanTitle
         title={plan.name}
         subtitle={

@@ -13,6 +13,10 @@ declare namespace DataCy {
         "avatar-upload-button" |
         "avatar-upload-file-input" |
         "base-language-select" |
+        "billing-plan" |
+        "billing-plan-action-button" |
+        "billing-plan-subtitle" |
+        "billing-plan-title" |
         "comment" |
         "comment-menu" |
         "comment-menu-delete" |

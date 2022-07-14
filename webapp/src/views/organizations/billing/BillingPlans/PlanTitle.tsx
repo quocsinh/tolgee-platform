@@ -21,9 +21,14 @@ type Props = {
 export const PlanTitle: React.FC<Props> = ({ title, subtitle }) => {
   return (
     <StyledWrapper>
-      <StyledMainTitle variant="h4">{title}</StyledMainTitle>
+      <StyledMainTitle variant="h4" data-cy="billing-plan-title">
+        {title}
+      </StyledMainTitle>
       {subtitle && (
-        <StyledSecondaryTitle variant="subtitle1">
+        <StyledSecondaryTitle
+          variant="subtitle1"
+          data-cy="billing-plan-subtitle"
+        >
           {subtitle}
         </StyledSecondaryTitle>
       )}
