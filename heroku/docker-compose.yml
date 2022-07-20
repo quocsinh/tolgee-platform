@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:11
+    environment:
+      - POSTGRES_PASSWORD=postgres
+  app:
+    image: tolgee/tolgee
+    volumes:
+      - ./data:/data
+    ports:
+      - "8090:8080"
+    env_file:
+      - .env
+    depends_on:
+      - "db"

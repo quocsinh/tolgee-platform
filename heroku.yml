@@ -4,6 +4,6 @@ setup:
       as: DATABASE
 build:
   docker:
-    web: ./docker/app/Dockerfile
+    web: ./heroku/Dockerfile
 release:
   image: web
